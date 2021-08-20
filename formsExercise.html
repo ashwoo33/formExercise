@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Customer Experience Survey</legend>
+        <div>
+            <label for="storeNumber">Store Number</label>
+            <select type="storeNumber" name="storeNumber">
+            <option value="3109">3109</option>
+            <option value="2421">2421</option>
+            <option value="5357">5357</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>When you visited:</legend>
+            <div>
+                <label for="dateVisited">Date Visited</label>
+                <input type="date" name="dateVisited" id="dateVisited">
+                <br>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time">
+            </div>
+        </fieldset>
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" placeholder="Name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+            <div>
+                <input type="radio" id="m" name="gender" value="Male">
+                <label for="m">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="f" name="gender" value="Female">
+                <label for="f">Female</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="question">Tell us about your experience:</label>
+            <br>
+            <textarea name="question" id="question" cols="20" rows="2"></textarea>
+        </div>
+        <div>
+            <label for="question">Times visited in the last month:</label>
+            <br>
+            <textarea name="question" id="question" cols="20" rows="2"></textarea>
+        </div>
+        <form>
+            <input type="checkbox" name="userCheckbox" id="userCheckbox">
+            <label for="userCheckbox">Please check the box if you would be willing to be contacted about your experience</label>
+        </form>
+        <div>
+            <button>Submit</button>
+        </div>
+    </fieldset>
+</body>
+</html>
