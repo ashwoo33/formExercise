@@ -11,17 +11,18 @@
         <legend>Customer Experience Survey</legend>
         <div>
             <label for="storeNumber">Store Number</label>
-            <select type="storeNumber" name="storeNumber">
+            <select name="store" id="store">
+                <option hidden>Select A Store</option>
             <option value="3109">3109</option>
             <option value="2421">2421</option>
             <option value="5357">5357</option>
             </select>
         </div>
         <fieldset>
-            <legend>When you visited:</legend>
+            <legend>When you visited:</legend> b∫
             <div>
                 <label for="dateVisited">Date Visited</label>
-                <input type="date" name="dateVisited" id="dateVisited">
+                <input type="date" name="dateVisited" id="dateVisited" min="2021-01-01" max="2021-12-31">
                 <br>
                 <label for="time">Time</label>
                 <input type="time" name="time" id="time">
@@ -42,7 +43,7 @@
                 <label for="m">Male</label>
             </div>
             <div>
-                <input type="radio" id="f" name="gender" value="Female">
+                <input type="radio" id="f" name="gender" value="Female" checked>
                 <label for="f">Female</label>
             </div>
         </fieldset>
@@ -52,16 +53,21 @@
             <textarea name="question" id="question" cols="20" rows="2"></textarea>
         </div>
         <div>
-            <label for="question">Times visited in the last month:</label>
+            <label for="number">Times visited in the last month:</label>
             <br>
-            <textarea name="question" id="question" cols="20" rows="2"></textarea>
+            <input type="number" name="number" id="number" min="1" max="30">
         </div>
         <form>
-            <input type="checkbox" name="userCheckbox" id="userCheckbox">
+            <input type="checkbox" name="userCheckbox" id="userCheckbox" required>
             <label for="userCheckbox">Please check the box if you would be willing to be contacted about your experience</label>
         </form>
         <div>
-            <button>Submit</button>
+        <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" pattern=".{5,10}" title="Please enter a password that is 5 to 10 characters in length">
+        </div>
+        <input type="reset">
+        <button>Submit</button>
         </div>
     </fieldset>
 </body>
